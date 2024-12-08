@@ -1,8 +1,7 @@
 const OpenAIApi = require("openai");
 
 const openai = new OpenAIApi({
-  apiKey:
-    "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", // Store your key securely in an environment variable
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 exports.getFollowUpQuestions = async (userInput) => {
