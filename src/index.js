@@ -12,7 +12,7 @@ async function startServer() {
   const app = express();
 
   const corsOptions = {
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://healthbridge-beta.vercel.app"],
     credentials: true,
   };
 
