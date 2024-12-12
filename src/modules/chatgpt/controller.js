@@ -1,5 +1,10 @@
 const OpenAIApi = require("openai");
 
+const openai = new OpenAIApi({
+  apiKey:
+    "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",
+});
+
 exports.getFollowUpQuestions = async (userInput) => {
   const prompt = `
 You are a medical advisory assistant. Based on the following user input, generate three follow-up questions to gather more details.
